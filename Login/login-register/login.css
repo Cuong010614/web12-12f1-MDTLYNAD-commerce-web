@@ -92,7 +92,7 @@
     transition: background-color 0.3s;
   }
   
-  .btn:hover {
+  btn:hover {
     background-color: #c31b6c;
   }
   
@@ -107,6 +107,10 @@
     color: #d63384;
     text-decoration: none;
     font-weight: 500;
+  }
+  
+  .extra-links a:hover {
+    text-decoration: underline;
   }
   
   .extra-links a:hover {
