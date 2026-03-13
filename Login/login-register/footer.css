@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif; 
+    line-height: 1.6;
+    background-color: #f9f9f9; 
+}
+
+/* --- FOOTER STYLES --- */
+.footer {
+    background-color: #ffffff;
+    padding: 60px 40px 20px;
+    color: #4a4a4a;
+    border-top: 1px solid #e1e1e1;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.footer-col {
+    flex: 1; 
+    min-width: 220px; 
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #222;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.footer-col p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.footer-col p strong {
+    color: #222;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 12px;
+}
+
+.footer-col ul li a {
+    text-decoration: none;
+    color: #666;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #088178; 
+}
+
+.footer-logo {
+    margin-bottom: 20px;
+    max-width: 100%;
+}
+
+.social-title {
+    margin-top: 25px;
+}
+
+.social-icons a {
+    color: #4a4a4a;
+    margin-right: 15px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #088178;
+}
+
+.app-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.app-buttons img {
+    border: 1px solid #088178; 
+    border-radius: 5px;
+    height: auto;
+    max-width: 100%;
+    cursor: pointer;
+}
+
+.secure-payment {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.payment-icons {
+    display: flex;
+    gap: 8px;
+}
+
+.payment-icons img {
+    height: 25px;
+    object-fit: contain;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    font-size: 14px;
+    color: #999;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; 
+    }
+    
+    .footer-col {
+        margin-bottom: 30px;
+    }
+}
