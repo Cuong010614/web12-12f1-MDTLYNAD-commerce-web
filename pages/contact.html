@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Cupid Shoes</title>
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+
+  <link rel="stylesheet" href="./contact.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+    <div class="container-fluid px-4">
+      <a class="navbar-brand d-flex align-items-center" href="../index.html">
+        <img src="../Login/login-register/logo.png" alt="Cupid Logo" width="40" height="40" class="rounded-circle me-2">
+        <strong class="text-danger">Cupid Shoes</strong>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="../Product/shoes.html">Shoes</a></li>
+          <li class="nav-item"><a class="nav-link" href="../Product/clothes.html">Clothes</a></li>
+          <li class="nav-item"><a class="nav-link" href="../Product/accessories.html">Accessories</a></li>
+          <li class="nav-item"><a class="nav-link" href="./blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="./contact.html">Contact</a></li>
+        </ul>
+
+        <div class="d-flex align-items-center gap-3">
+          <a href="#" class="nav-icon text-dark"><i class="fas fa-search"></i></a>
+          <a href="../Login/login-register/register.html" class="nav-icon text-dark"><i class="fas fa-user"></i></a>
+          <a href="../Product/cart.html" class="nav-icon text-dark"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="contact-hero">
+    <div class="container text-center">
+      <p class="contact-subtitle">Contact Cupid Shoes</p>
+      <h1>Liên hệ với chúng tôi</h1>
+      <p class="hero-desc">
+        Ghé thăm cửa hàng, liên hệ trực tiếp hoặc nhắn tin cho chúng tôi để được hỗ trợ nhanh nhất.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Info + Map -->
+  <section class="contact-section py-5">
+    <div class="container">
+      <div class="row align-items-stretch g-4">
+        
+        <div class="col-lg-5">
+          <div class="contact-info-box">
+            <span class="mini-title">LIÊN LẠC</span>
+            <h2>Ghế thăm một trong những đại lý của chúng tôi hoặc liên hệ với chúng tôi ngay hôm nay</h2>
+
+            <div class="contact-list">
+              <div class="contact-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>HCM City, Quận 2</span>
+              </div>
+
+              <div class="contact-item">
+                <i class="fa-regular fa-envelope"></i>
+                <span>cupidstore@gmail.com</span>
+              </div>
+
+              <div class="contact-item">
+                <i class="fa-solid fa-phone"></i>
+                <span>0123 456 789</span>
+              </div>
+
+              <div class="contact-item">
+                <i class="fa-regular fa-clock"></i>
+                <span>Thứ 2 đến Thứ 7: 9:00 sáng đến 19:00 tối</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="map-box">
+            <iframe
+              src="https://www.google.com/maps?q=Ho%20Chi%20Minh%20City&z=10&output=embed"
+              width="100%"
+              height="100%"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="message-section py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="message-box">
+            <div class="text-center mb-4">
+              <p class="contact-subtitle">Send Message</p>
+              <h2>Gửi tin nhắn cho Cupid</h2>
+              <p class="form-desc">
+                Điền thông tin bên dưới và chúng tôi sẽ phản hồi bạn sớm nhất có thể.
+              </p>
+            </div>
+
+            <form id="contactForm">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <input type="text" class="form-control custom-input" id="name" placeholder="Họ và tên" required>
+                </div>
+                <div class="col-md-6">
+                  <input type="email" class="form-control custom-input" id="email" placeholder="Email" required>
+                </div>
+                <div class="col-12">
+                  <input type="text" class="form-control custom-input" id="subject" placeholder="Chủ đề" required>
+                </div>
+                <div class="col-12">
+                  <textarea class="form-control custom-input" id="message" rows="6" placeholder="Nội dung tin nhắn" required></textarea>
+                </div>
+                <div class="col-12 text-center">
+                  <button type="submit" class="send-btn">Gửi tin nhắn</button>
+                </div>
+              </div>
+            </form>
+
+            <p id="formMessage" class="text-center mt-3"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer py-4">
+    <div class="container text-center">
+      <p class="mb-1">© 2026 Cupid Shoes. All rights reserved.</p>
+      <small>Style your steps, own your story.</small>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./contact.js"></script>
+</body>
+</html>
